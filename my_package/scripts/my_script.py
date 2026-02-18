@@ -5,11 +5,11 @@ from argparse import ArgumentParser
 
 def options():
     if not sys.argv[1:]:
-        raise ValueError('Arguments supplied via sys.argv are required')
+        sys.argv[1:] = ['--help']
 
     ap = ArgumentParser(prog="my-script", usage="")
-    ap.add_argument('--my_param', default='', help='')
-
+    ap.add_argument('--my_param', required=False, type=int, default=1, help='')
+    
     return ap.parse_args()
 
 def run():

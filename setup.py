@@ -24,7 +24,7 @@ setup(
     packages = find_packages(exclude=['tests']),
     package_data = {'my_package': ['data/my_data.json']},
     install_requires = requirements,
-    python_requires = '>=3.10,<=3.14',
+    python_requires = '>=3.10,<3.15',
     entry_points = {
         'console_scripts': [
             'my-command=my_package.scripts.my_script:run',
