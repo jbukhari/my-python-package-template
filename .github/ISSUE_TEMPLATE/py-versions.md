@@ -1,6 +1,6 @@
 ---
 name: Update supported Python versions
-about:  
+about:  Tasks for updating the supported Python version
 title: Update supported Python versions
 labels: ''
 assignees: ''
