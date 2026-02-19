@@ -1,7 +1,6 @@
 """Python module"""
 
 import sys, os, re
-from my_package.my_module import my_submodule
 
 class MyClass():
     def __init__(self):
